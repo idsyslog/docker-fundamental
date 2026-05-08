@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>TazkiaTech</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: system-ui, sans-serif; background:#f8fafc; color:#0f172a; }
+
+    nav {
+      padding: 16px 40px; background: #fff;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo { font-weight:800; font-size:1.1rem; color:#6366f1; }
+    .logo span { color:#0f172a; }
+    nav ul { display:flex; gap:28px; list-style:none; }
+    nav a { color:#64748b; text-decoration:none; font-size:.9rem; }
+    nav a:hover { color:#6366f1; }
+
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+      color: #fff; text-align: center; padding: 100px 24px 80px;
+    }
+    .badge {
+      display:inline-block; background:rgba(99,102,241,.15);
+      border:1px solid rgba(99,102,241,.4); color:#a5b4fc;
+      padding:4px 14px; border-radius:999px; font-size:.8rem; margin-bottom:20px;
+    }
+    .hero h1 { font-size:2.8rem; font-weight:800; line-height:1.15; }
+    .hero h1 span { color:#818cf8; }
+    .hero p { margin:16px auto 32px; color:rgba(255,255,255,.55); max-width:420px; }
+    .btn {
+      background:#6366f1; color:#fff; padding:12px 32px;
+      border-radius:8px; font-weight:600; text-decoration:none;
+      margin-right:12px; display:inline-block;
+    }
+    .btn-outline {
+      border:1px solid rgba(255,255,255,.2); color:#fff;
+      padding:12px 28px; border-radius:8px; text-decoration:none; display:inline-block;
+    }
+
+    .services { padding:72px 40px; max-width:1060px; margin:0 auto; }
+    .services h2 { font-size:1.6rem; font-weight:800; text-align:center; margin-bottom:8px; }
+    .services p.sub { text-align:center; color:#64748b; margin-bottom:40px; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:28px 24px; }
+    .card-icon {
+      width:44px; height:44px; background:#eef2ff; border-radius:10px;
+      display:flex; align-items:center; justify-content:center;
+      font-size:1.3rem; margin-bottom:16px;
+    }
+    .card h3 { font-size:1rem; font-weight:700; margin-bottom:8px; }
+    .card p { font-size:.88rem; color:#64748b; line-height:1.65; }
+
+    footer {
+      background:#0f172a; color:rgba(255,255,255,.45);
+      padding:20px 40px; display:flex;
+      align-items:center; justify-content:space-between; font-size:.82rem;
+    }
+    .version-badge {
+      display:flex; align-items:center; gap:8px;
+      border:1px solid rgba(129,140,248,.35);
+      background:rgba(129,140,248,.08); padding:6px 16px; border-radius:999px;
+    }
+    .dot {
+      width:7px; height:7px; background:#818cf8;
+      border-radius:50%; animation:pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+    .ver { color:#818cf8; font-family:monospace; font-weight:700; font-size:.9rem; }
+    .env-tag {
+      background:rgba(251,146,60,.12); color:#fb923c;
+      border:1px solid rgba(251,146,60,.3);
+      padding:1px 10px; border-radius:999px; font-size:.72rem; font-weight:700;
+    }
+    .host { font-family:monospace; font-size:.75rem; color:rgba(255,255,255,.2); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="logo">⚡ Tazkia<span>Tech</span></span>
+    <ul>
+      <li><a href="#">Layanan</a></li>
+      <li><a href="#">Portofolio</a></li>
+      <li><a href="#">Tentang</a></li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="badge">🚀 IT Solutions &amp; Consulting</div>
+    <h1>Teknologi yang <span>Menggerakkan</span><br />Bisnis Anda</h1>
+    <p>Kami membantu perusahaan bertransformasi digital dengan solusi cloud, DevOps, dan pengembangan software.</p>
+    <a href="#" class="btn">Konsultasi Gratis</a>
+    <a href="#" class="btn-outline">Lihat Portofolio</a>
+  </section>
+
+  <section class="services">
+    <h2>Layanan Kami</h2>
+    <p class="sub">Solusi teknologi end-to-end untuk kebutuhan bisnis modern</p>
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon">☁️</div>
+        <h3>Cloud Infrastructure</h3>
+        <p>Migrasi dan optimasi infrastruktur ke cloud (AWS, GCP, Azure) dengan arsitektur yang scalable dan cost-efficient.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔧</div>
+        <h3>DevOps &amp; CI/CD</h3>
+        <p>Otomasi pipeline deployment, containerisasi dengan Docker &amp; Kubernetes, dan monitoring infrastruktur production.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💻</div>
+        <h3>Software Development</h3>
+        <p>Pengembangan aplikasi web dan mobile dengan teknologi modern — dari microservice hingga API design.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 TazkiaTech. All rights reserved.</span>
+    <div class="version-badge">
+      <span class="dot"></span>
+      <span class="ver">v1.0.0</span>
+      <span class="env-tag">staging</span>
+    </div>
+    <span class="host">🖥 docker-host-01</span>
+  </footer>
+
+</body>
+</html>

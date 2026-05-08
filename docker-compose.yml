@@ -1,0 +1,15 @@
+services:
+
+  tazkia-v1:
+    build: .
+    image: tazkiatech:1.0
+    container_name: tazkia-v1
+    ports:
+      - "8081:80"
+
+  tazkia-v2:
+    build: .
+    image: tazkiatech:2.0
+    container_name: tazkia-v2
+    ports:
+      - "8082:80"
